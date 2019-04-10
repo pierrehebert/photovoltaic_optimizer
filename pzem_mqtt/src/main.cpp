@@ -53,6 +53,8 @@ void publish_raw(const char *topic) {
     }
     client.publish(topic, s.c_str());
 }
+#else
+#define PUBLISH_RAW(...)
 #endif
 
 void setup_wifi() {
