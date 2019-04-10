@@ -1,6 +1,0 @@
-Stuff related to the SCR control.
-
-There are three implementations
-- Arduino/scr_control_local : Initial implementation, Arduino Nano based, with local control.
-- Arduino/scr_control_remote : Arduino Nano based, with remote control using NRF24L01+.
-- PlatformIO/scr_control : PIO project using an ESP-01 module, WiFi and MQTT.
