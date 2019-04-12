@@ -29,6 +29,7 @@ PZEM004T::PZEM004T(int receivePin, int transmitPin) {
 }
 
 bool PZEM004T::init() {
+    flush();
     port->write(RequestSetAddress, sizeof(RequestSetAddress));
     return read_reply();
 }
